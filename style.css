@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sketch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+}
+
+.sketch-grid div {
+  border: 1px solid lightcoral;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.hovered {
+  background-color: blue;
+}
