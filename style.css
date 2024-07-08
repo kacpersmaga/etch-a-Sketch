@@ -5,8 +5,9 @@ body {
 .sketch-container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+
   align-items: center;
+  flex-direction: column;
 }
 .sketch-grid {
   display: flex;
@@ -28,4 +29,23 @@ body {
 h1 {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 100px;
+  color: #2e86de;
+}
+
+.btn-gridGenerate {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2e86de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.btn-gridGenerate:hover {
+  background-color: #1e65a3;
 }
