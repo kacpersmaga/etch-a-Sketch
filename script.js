@@ -18,7 +18,16 @@ function createGrid(squarePerSide){
         let div = document.createElement("div");
         div.style.width = `${squareSize}px`
         div.style.height = `${squareSize}px`
-        div.addEventListener("mouseover", () => div.classList.add("hovered"))
+        div.addEventListener("mouseover", () => {
+            let red = Math.floor(Math.random()*256);
+            let green = Math.floor(Math.random()*256);
+            let blue = Math.floor(Math.random()*256);
+
+            let opacity = parseFloat(div.style.backgroundColor.slice(-4,-1))
+            if(isNaN(opacity)) opacity = 1;
+            opacity-= 0.1;
+            div.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${opacity})`;
+        })
         container.appendChild(div);
     }
 }

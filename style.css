@@ -13,10 +13,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 640px;
+  background-color: #eff6ff;
 }
 
 .sketch-grid div {
-  border: 1px solid lightcoral;
   width: 40px;
   height: 40px;
   box-sizing: border-box;
